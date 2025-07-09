@@ -32,6 +32,7 @@
 | **Generative Language API key**   | Plain API key (Gemini)                                 |
 
 ---
+tree -I node_modules -L 2 > structure.txt
 
 ## 2 · Folder structure
 
