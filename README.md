@@ -100,4 +100,3 @@ Add to Wallet → Google Wallet opens with your pass![Screenshot 2025-07-10 0506
 
 # Project-Raseed-Basic-Prototype-
 
-![WhatsApp Image 2025-07-10 at 05 06 54_9f3ecb55](https://github.com/user-attachments/assets/0540a02d-20fd-4438-a418-04621c81aee0)
