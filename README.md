@@ -1,3 +1,4 @@
+![Screenshot 2025-07-10 050651](https://github.com/user-attachments/assets/38887133-71d8-4f8f-9658-9054815eecaf)
 # 🧾 Project Raseed – AI Receipt Manager + Google Wallet Pass Generator
 
 > **PromptForge / Agentic-AI Hackathon 2025-07-10**  
