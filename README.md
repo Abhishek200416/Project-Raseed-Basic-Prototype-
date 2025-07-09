@@ -6,8 +6,6 @@
 ---
 
 ## ✨ What the demo does
-![Screenshot 2025-07-10 050651](https://github.com/user-attachments/assets/d282921c-2e12-41a8-908a-c3506f18154a)
-![WhatsApp Image 2025-07-10 at 05 06 54_1c9f52ea](https://github.com/user-attachments/assets/d2d3ab8c-8536-4834-b779-f8547e9d9e1e)
 
 1. **Drag-and-drop any retail receipt** (photo/scan).  
 2. Back-end uses **Gemini 2.5-Flash Vision** to extract clean **line-items & prices**.  
