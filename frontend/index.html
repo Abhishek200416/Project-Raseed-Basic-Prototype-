@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Project Raseed</title>
+    <meta name="theme-color" content="var(--primary)">
+
+    <!-- Roboto & Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Material Web Components -->
+    <script type="module">
+        import 'https://unpkg.com/@material/mwc-button?module'; import 'https://unpkg.com/@material/mwc-textfield?module'; import 'https://unpkg.com/@material/mwc-snackbar?module'; import 'https://unpkg.com/@material/mwc-switch?module';
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="app-bar">
+        <span class="material-icons app-bar__icon">wallet</span>
+        <h1 class="app-bar__title">Project Raseed</h1>
+        <mwc-switch id="themeToggle" aria-label="Toggle dark mode"></mwc-switch>
+    </header>
+
+    <main class="layout-grid">
+        <!-- 1) Upload Receipt -->
+        <section class="card" id="upload-section">
+            <h2>1) Upload Receipt</h2>
+            <div id="dropZone" class="file-drop">
+                <input type="file" id="receipt" accept="image/*" hidden>
+                <span class="material-icons file-drop__icon">cloud_upload</span>
+                <p id="fileLabel">Click or drop receipt here</p>
+            </div>
+            <img id="preview" class="preview" hidden>
+            <mwc-button id="uploadBtn" raised unelevated>
+                <span class="material-icons">upload_file</span>Upload
+            </mwc-button>
+            <progress id="uploadProgress" class="upload-progress" value="0" max="100" hidden></progress>
+            <pre id="formatter" class="result"></pre>
+        </section>
+
+        <!-- 2) Upload History -->
+        <section class="card" id="history-section">
+            <h2>2) Upload History</h2>
+            <div id="historyList" class="history-list"></div>
+        </section>
+
+        <!-- 3) Wallet Insights Chat -->
+        <section class="card" id="chat-section">
+            <h2>3) Wallet Insights Chat</h2>
+            <mwc-textfield id="q" outlined label="Ask wallet-related query" icon="search" style="width:100%;"></mwc-textfield>
+            <mwc-button id="askBtn" raised unelevated>
+                <span class="material-icons">insights</span>Go
+            </mwc-button>
+            <div class="insight-container">
+                <pre id="insight" class="result"></pre>
+                <button id="clearInsight" class="clear-insight" hidden>×</button>
+            </div>
+            <a id="passLink" class="btn-outline" href="#" target="_blank" hidden>
+                <span class="material-icons">open_in_new</span>Add to Wallet
+            </a>
+        </section>
+    </main>
+
+    <mwc-snackbar id="toast" leading></mwc-snackbar>
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
