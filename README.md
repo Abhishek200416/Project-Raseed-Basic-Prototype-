@@ -36,7 +36,7 @@
 tree -I node_modules -L 2 > structure.txt
 
 ## 2 · Folder structure
-
+```
 project-raseed/
 ├─ backend/
 │ ├─ main.py ← FastAPI entry-point
@@ -51,7 +51,7 @@ project-raseed/
 ├─ backend/requirements.txt
 ├─ Dockerfile
 └─ README.md ← you’re here
-
+```
 
 ---
 
