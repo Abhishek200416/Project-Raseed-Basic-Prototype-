@@ -86,7 +86,7 @@ pip install -r backend/requirements.txt
 export $(grep -v '^#' .env | xargs)
 
 # 4) Launch server
-uvicorn backend.main:app --reload --port ${PORT:-8080}
+python -m uvicorn backend.main:app --reload --port 8080
 
 8 · What you should see
 Upload a sample receipt → line-items appear in a table
